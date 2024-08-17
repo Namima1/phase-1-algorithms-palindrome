@@ -1,13 +1,29 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+  const reversedWord = word.split('').reverse().join('');
+
+  if (word === reversedWord) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isPalindrome('abba'));
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('a'));
+console.log(isPalindrome('robot'));
+console.log(isPalindrome('ab'));
 
 /* 
-  Add your pseudocode here
+  call the word for the palindrome. 
+      if return true
+         it is a palidrome
+        if it is not a palidrome 
+      false will be given
 */
 
 /*
-  Add written explanation of your solution here
+  if the word is reverse give true, if it is not reverse give false
 */
 
 // You can run `node index.js` to view these console logs
